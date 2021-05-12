@@ -27,9 +27,7 @@
         */
     h1 { background-color: skyblue;}
         /*  "*" 별표(애스터리스크)는 바디태그 안에 많이 쓰임 */
-    div *  {
-        color: green;
-    }
+    /* div *  {      color: green;    } */
     .box-one, .box-two {background-color: tomato;}
     #box-four, #box-five {background-color: yellow;}
     /* .부터 시작하는건 class 선택자
@@ -51,12 +49,42 @@
 
     }
     /* 크기단위 font크기, img 크기 단위종류 3가지 ~px, em(1.2배수), rem(root 기반 배수) */
-
+    .box-one {
+        width: 200px;
+        height: 200px;
+        background-color: green;
+        padding:  20px; /* 바깥 여백 */
+        /*바깥쪽 여백: 4가지 방향 12시부터 시계방향으로 이동.(위, 오른쪽, 밑, 왼쪽) */
+        margin: 20px 10px 50px 80px;
+        /* 바깥여백: 2가지 방향 상하 / 좌우 */
+        margin: 30px 60px; /* 30 상하, 60 좌우 */
+        border: 10px solid black;
+        box-sizing: border-box;
+        /* 필수!!!!!! "box-sizing 으로 사이즈 고정시키는것" */
+        /* 가로 가운데 정렬하는 방법 */
+        margin: 0px;
+        margin: 0px auto;
+        /* 0 상하, auto 좌우 */
+        margin: 0px;
+        position: fixed;
+        /* 기본이 relative 앱솔루트 사용시 자리가 다른 태그와 관련없는 위치 가짐(절대위치) fixed는 화면 내려도 움직임(붙박이, 고정위치) */
+        margin-top: 20px;
+        margin-left: 20px;
+        /* position: relative; */
+        
+    }
+    .box-two {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        box-sizing: border-box; /* 필수!!! */
+    }
 </style>
 </head>
 <body>
     <h1>헬로 CSS</h1>
-     <div class="box-one"><p>one</p></div>
+     <div class="box-one"><p style="color: white;">
+        <a href="#">상단으로 이동</a></p></div>
      <div class="box-two"><a href="#">two two two</a></div>
      <div class="box-three">three</div>
      <div id="box-four">four</div>
@@ -82,5 +110,8 @@
 
      <!-- 인라인 CSS 글 사이에 span + style 사용해서 변경 -->
      <p> <span style="color: tomato;">Lorem ipsum</span> dolor sit amet consectetur adipisicing elit. Voluptate soluta, asperiores quidem nesciunt maiores reiciendis modi sed, nihil praesentium obcaecati vero dolorum minima? Cupiditate, optio nisi. Incidunt aut quisquam numquam, placeat, pariatur, autem commodi nulla totam in dolore neque explicabo velit consequatur. Esse rem atque consectetur sunt voluptatem, ipsa vero ea, nesciunt debitis cupiditate pariatur doloribus dolorem aliquid praesentium voluptatibus hic quod dolor voluptas. Dignissimos aut praesentium animi aperiam numquam quam corrupti magnam. Quae, quasi eius. Cupiditate porro facilis eum deserunt delectus quidem reiciendis saepe quasi rem excepturi cum ratione veritatis alias repudiandae tempora dignissimos incidunt, assumenda tempore maxime voluptate!</p>
+     <p> <span style="color: tomato;">Lorem ipsum</span> dolor sit amet consectetur adipisicing elit. Voluptate soluta, asperiores quidem nesciunt maiores reiciendis modi sed, nihil praesentium obcaecati vero dolorum minima? Cupiditate, optio nisi. Incidunt aut quisquam numquam, placeat, pariatur, autem commodi nulla totam in dolore neque explicabo velit consequatur. Esse rem atque consectetur sunt voluptatem, ipsa vero ea, nesciunt debitis cupiditate pariatur doloribus dolorem aliquid praesentium voluptatibus hic quod dolor voluptas. Dignissimos aut praesentium animi aperiam numquam quam corrupti magnam. Quae, quasi eius. Cupiditate porro facilis eum deserunt delectus quidem reiciendis saepe quasi rem excepturi cum ratione veritatis alias repudiandae tempora dignissimos incidunt, assumenda tempore maxime voluptate!</p>
+     <p> <span style="color: tomato;">Lorem ipsum</span> dolor sit amet consectetur adipisicing elit. Voluptate soluta, asperiores quidem nesciunt maiores reiciendis modi sed, nihil praesentium obcaecati vero dolorum minima? Cupiditate, optio nisi. Incidunt aut quisquam numquam, placeat, pariatur, autem commodi nulla totam in dolore neque explicabo velit consequatur. Esse rem atque consectetur sunt voluptatem, ipsa vero ea, nesciunt debitis cupiditate pariatur doloribus dolorem aliquid praesentium voluptatibus hic quod dolor voluptas. Dignissimos aut praesentium animi aperiam numquam quam corrupti magnam. Quae, quasi eius. Cupiditate porro facilis eum deserunt delectus quidem reiciendis saepe quasi rem excepturi cum ratione veritatis alias repudiandae tempora dignissimos incidunt, assumenda tempore maxime voluptate!</p>
+
 </body>
 </html>
