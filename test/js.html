@@ -28,7 +28,12 @@
         </tr>
     </table>
     <div id="one">헬로 자바스크립트</div>
+    <input type="text" name="name" id="name" value='테스트'>
+    <button onclick="checkValue()">입력값 확인</button>
     <script>
+        // 여러개의 element 선택
+        var names = document.getElementById('name');
+
         // 변수의 영역(scope)
         // function스코프 var, 블럭scople 변수예약어 let, const
         var i = 10;
