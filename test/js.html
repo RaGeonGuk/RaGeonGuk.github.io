@@ -47,7 +47,7 @@
     <input type="text" name="name" id="name" value='테스트'>
     <!-- 입력값을 전송하는 버튼 -->
     <button onclick="checkValue('zzz')">입력값 확인</button>
-    <button id="chechvalue">('jQuery')>입력값 확인</button> 
+    <button id="checkValue">jQuery입력값 확인</button> 
     <br>
 
     <script>
@@ -60,7 +60,7 @@
         var twoClassName = document.getElementsByClassName('two');
         // 네이밍 방식: 카멜(낙타등)표기법 단어와 단어를 합칠때, 
         // 카멜표기법: 소문자로 시작, 다른 단어가 나올 때는 대문자로 시작, 나머지는 다 소문자
-        console.log(twoClassName); //Two + Class + Name = twoClassName
+        console.log(twoClassName); // Two + Class + Name = twoClassName
         document.write('클래스 엘리먼트 내용출력 : ', twoClassName[0]['innerHTML']);
         function checkValue(params) { // 전송을 받습니다.
             // alert(params + ' 버튼 클릭 되었습니다.');
