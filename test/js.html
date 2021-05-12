@@ -29,6 +29,28 @@
     </table>
     <div id="one">헬로 자바스크립트</div>
     <script>
+        // 인터넷 자료교환 대량 데이터 형식 xml 태그 방식
+        // 지금은 json(JavaScript Object Notation) 자바스크립트 객체 표시
+        var human = {
+            name: {
+                firstname:'라',
+                lastname: '건국'
+            },             // object(배열) 
+            age:10,        // number
+            married: false // bollean
+
+        }
+        document.write(typeof(human));
+        document.write('<br>');
+        document.write(human['name']);
+        document.write('<br>');
+        document.write(human['name']['firstname']);
+        document.write('<br>');
+        document.write(human['name']['lastname']);
+        document.write('<br>');
+        document.write(human['age']); // 값을 파싱할때, 키로 값을 뽑아냅니다.
+        document.write('<hr>');
+        //복잡해 보이지만, key:value ( 고유키:값 )
         // 사용자 데이터형: object(array)
         // 참고: 기본형 데이터: number, string, boolean
         var arrays = [10,20,30,40];
@@ -41,10 +63,12 @@
         document.write(arrays); // pop 이전의 배열 값
         document.write('<br>');
         document.write(arrays.pop()); // arrays하여 자료를 뽑아냄.
+        // pop은 제일 마지막에 입력된 == index가 제일 마지막인 값이 출력됨
         document.write('<br>');
         document.write(arrays); // pop 이후의 배열값
         document.write('<br>');
         document.write(arrays.push(1000)); // arrays에 자료 입력
+        // push도 마찬가지로 index 값이 제일 마지막인 자료 다음에 입력이 됩니다. 
         document.write('<br>');
         document.write(arrays);
         document.write('<br>');
@@ -52,7 +76,9 @@
         document.write('<br>');
         document.write(arrays);
         document.write('<br>');
+        document.write(arrays.sort()); // 오름차순 1,2,3
         document.write('<br>');
+        document.write(arrays.reverse()); // 내림차순 3,2,1
         document.write('<br>');
 
         //날짜내장함수사용
