@@ -41,7 +41,7 @@ ul.viewImgList li {
     /* ul클래스명: ul태그중 클래스 명이 viewImgList 영역 */
     text-align: center;
     height: 300px;
-    line-height: 550;
+    line-height: 550px;
     background-size: cover; /* 배경 이미지의 크기를 꽉 채우는 값 */
     width: 100%;
 }
@@ -101,7 +101,74 @@ li.imglist2 {
 .rollingbtnli a {
     vertical-align: top; /* img와 다른 태그 사용 시 다른 태그의 세로 정렬 */
 }
-/* 슬라이드 영역 */
+/* //슬라이드 영역 */
+/* 갤러리 최근 게시물 영역 */
+.about_area h2 {
+    font-size: 20px;
+    padding: 27px 0px 25px; /* 27상하, 8좌, 25우 */
+}
+.about_area h2 b {
+    display: block; /* 1개 라인 영역 모두 차지 */
+    padding-top: 10px;
+}
+.about_box {background-color: #fff;}
+.place_list li {
+    float: none;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0px 20px;
+}
+.place_list li img {
+    width: 100% /* 가로크기 반응형으로 만드는 방법, 크기를 100% 표시 */
+}
+.place_list li h3 {
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 25px;
+}
+.place_list p.txt {
+    padding: 10px 50px 30px;
+    line-height: 1,4;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    word-break: keep-all;
+    color: #666;
+}
+.place_list li .view {
+    padding-bottom: 10px;
+    margin: 0px 0px 30px;
+    display: inline-block;
+    padding-top: 5px;
+    border-top: 2px solid #333;
+    color: #666;
+}
+/* //갤러리 최근 게시물 영역 */
+/* 공지사항 최근게시물 영역 */
+.app_line{display: none;} /* 태블릿, pc용 전용 콘텐츠 */
+.appbbs_area{
+    padding: opx 0px 20px;
+    text-align: left;
+}
+.bbs_line {
+    float: none;
+    width: 100%;
+    padding: 20px 0px;
+    border-top: 1px solid #d6d7d8;
+}
+.bbs_line h3 {
+    font-weight: bold;
+    font-size: 19px;
+}
+.bbs_line .notice_recent {
+    padding-top: 10px;
+}
+.bbs_line .notice_recent li {
+    padding: 8px 0px;
+}
+
+/* //공지사항 최근게시물 영역 */
 /* //본문컨테이너 영역 */ 
 </style>
 <script>
