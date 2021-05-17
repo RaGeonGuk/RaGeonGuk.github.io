@@ -1,13 +1,18 @@
+#### 작업예정.
+
+
 #### 작업예정: jQuery 제이쿼리 JSON epdlxj vktld
 - 외부 data.js 파일에서 json데이터를 저장한 후 html에서 불러와서 파싱.
 - 외부 사이트에서 제공(RestAPI서버)하는 json데이터를 html에서 불러와 파싱
 - RestAPI서버 중 코로나19 확진자 데이터를 받아서 html에서 파싱 (파싱 = 데이터를 분해해서 화면에 뿌려주는 작업)
 - RestAPI 서버주소(빅데이터): https://coroname.me/getdata
+- 수업시작전, jsonData 파싱부분에서 append 사용에 2번반복되는 부분 확인
 
-#### 20210517(월) 작업예정
 - 메인페이지에 자바스크립트(jQuery)적용.(VS code + HTML5 + CSs + jQuery)
 - 메뉴, 슬라이드이미지처리, top 상단으로 이동
 - jQuery 적용부분: 메뉴, 슬라이드 이미지 3개 처리: 모바일 메인페이지만 마무리
+- 보통 이미지 슬라이드 처리는 외부 라이브러리(Lib) 사용(니보슬라이드, 캐로셀슬라이드)
+- 외부 Lib 사용안하고, 우리가 만들어봅시다.
 - 테블릿 메인 CSS 스타일 처리, PC용 메인 CSS 스타일처리
 - 모바일 서브페이지
 - 테블릿+pc용 CSS 스타일처리
@@ -31,6 +36,8 @@
 - 픽사베이 이미지 3개: 로고1, 슬라이드 이미지1, NoImage 1 받고 경로 적어놓기
 - 로고: https://pixabay.com/ko/illustrations/%EC%8B%AC%EC%9E%A5-%ED%99%94-%EC%97%BC-%ED%99%94%EC%9E%AC-%EC%95%84%EC%9D%B4%EC%BD%98-2320561/
 - 슬라이드이미지: https://pixabay.com/ko/photos/%EB%B6%80%EB%93%9C%EB%9F%AC%EC%9A%B4-%EA%B3%BC%EC%9D%BC-%EB%B8%94%EB%A3%A8%EB%B2%A0%EB%A6%AC-3504149/
+- 슬라이드이미지2: https://pixabay.com/ko/photos/%EC%95%84%EC%9D%B4%EC%8A%A4-%ED%81%AC%EB%A6%BC-%EB%94%94%EC%A0%80%ED%8A%B8-%EC%9D%8C%EC%8B%9D-1274894/
+- 슬라이드이미지3: https://pixabay.com/ko/photos/%EB%B0%B0%EA%B2%BD-%EB%B9%84%EC%B9%98-%EC%95%84%EB%A6%84-%EB%8B%A4%EC%9A%B4-2413081/
 - NoImage: https://pixabay.com/ko/vectors/%EC%9A%B4%EC%A0%84-%EA%B8%88%EC%A7%80-%EA%B8%88%EC%A7%80-%EB%8F%84-%ED%91%9C%EC%A7%80%ED%8C%90-146893/
 - 작업폴더를 나누는 이유: 시청(관공서), 대학, 기업의 웹프로그램(사이트) 제작 할때, 1년간은 무상 유지보수 이후 2천, 리뉴얼 4천 비용이 책정
 - home폴더 기존작업물, 리뉴얼 home에 덮어쓰는 방식이 아니고, 
