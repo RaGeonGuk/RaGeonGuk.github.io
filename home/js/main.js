@@ -13,6 +13,4 @@ $('.to_top a').smoothScroll();
 		$('#header').removeClass('on')
 	})
 	});
-});
-
 	

@@ -15,52 +15,52 @@
 <link rel="stylesheet" href="/home/css/reset.css">
 <!-- 여기서 부터 사용자 정의형 스타일 + 스크립트 추가(아래) -->
 <link rel="stylesheet" href="/home/css/mobile.css">
-<!-- 태블릿용 CSS 입포트 -->
+<!-- 테블릿용 CSS 임포트 -->
+<link rel="stylesheet" href="/home/css/tablet.css">
 <script src="/home/js/main.js"></script>
-<!-- 메인 슬라이드 코어 임포트  |||||||| 코어는 대부분 외부 프로그램 불러서 씀 -->
+<!-- 메인슬라이드 코어 임포트 -->
 <script src="/home/js/slidemain.js"></script>
 <style>
 /* 테블릿용 메인페이지 스타일 지정(아래) */
 @media all and (min-width:801px) {
 	
 }
-
 </style>
 <script>
-// 메인페이지 전용 슬라이드 호출부분 
+// 메인페이지 전용 슬라이드 호출 부분
 $(document).ready(function() {
-	// 위에서 선언한 함수|변수 사용(아래)
-	// 여기서 호출함수 (실행)
-	slideAuto = setTimeout('play_w("right")',3000); // 3초마다 play_w 함수 실행
+	//위에서 선언한 함수|변수 사용(아래)
+	//여기서 함수호출(실행)
+	slideAuto = setTimeout('play_w("right")', 3000);//3초마다 play_w함수 실행
 	var slidePlayHide = setTimeout(function(){
 		$('.rollplay').css('display','none');
-	},3000); // 3초후에 rollplay 클래스 영역을 숨김 3초 후에 사라지기 때문에
-	// 3개의 슬라이드 버튼 클릭 액션처리
-	$('.rollstop').click(function(){
+	},3000);//3초 후에 rollplay클래스 플레이버튼 영역을 숨김
+	// 3개의 슬라이드 버튼 클랙 액션처리
+	$('.rollstop a').click(function(){
 		// this는 클릭한 본인 태그를 말합니다.
-		$(this).hide();// 현재 보이는 객채를 숨김(스탑버튼): rollstop의 부모, 'li class'
+		$(this).parent().hide();//현재 stop버튼 숨김.
 		$('.rollplay').css('display','inline-block');
 		if(slideAuto) {
-			clearTimeout(slideAuto); // slideAuto 라는 변수가 없다면, play_w 함수를 실행 중지.
+			clearTimeout(slideAuto);//slideAuto변수가 없다면, play_w함수를 실행 중지.
 		}
-	})
+	});
 	$('.rollplay a').click(function(){
-		$(this).parent().hide(); // a태그의 부모 rollplay 영역 입니다.
+		$(this).parent().hide();// a태그의 부모 rollplay영역 입니다.
 		$('.rollstop').css('display','inline-block');
-		play_w('right'); // 3초마다 슬라이드 이미지 액션이 발생합니다.
+		play_w('right');//3초마다 슬라이드 이미지 액션일 발생합니다.
+
 	});
 	$('.rollingbtn li.seq a').each(function(index){
 		$(this).click(function(){
 			$('.rollplay').hide();
-			$('.rollstop').css('display', 'inline-block');
+			$('.rollstop').css('display','inline-block');
 			if(slideAuto) {
-				clearTimeout(slideAuto); // 슬라이드 중지
+				clearTimeout(slideAuto);//슬라이드 중지
 			}
-			play_w(index); // 슬라이드 재생 : 단 시작 위치는 클릭한 index 부터 무한반복
-		})
-	})
+			play_w(index);//슬라이드 재생 : 단 시작위치는 클릭한 index부터 무한반복
+		});
+	});
 });
-//
 </script>
 </head>
 <body>
@@ -149,6 +149,7 @@ $(document).ready(function() {
                 <!-- 슬라이드버튼영역 -->
                 <div class="rollbtnArea">
                     <ul class="rollingbtn">
+						<!-- butt0 a img -->
                         <li class="seq butt0"><a href="#butt"><img src="./img/btn_rollbutt_on.png" alt="1번" /></a></li>
                         <li class="seq butt1"><a href="#butt"><img src="./img/btn_rollbutt_off.png" alt="2번" /></a></li>
                         <li class="seq butt2"><a href="#butt"><img src="./img/btn_rollbutt_off.png" alt="3번" /></a></li>
