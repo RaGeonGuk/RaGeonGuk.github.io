@@ -20,8 +20,14 @@
 
 #### 20210521(금) 작업 예정
 - 반응형 게시판페이지(CRUD) CSS 처리: Create(Update) = board_write.html
+- 글스기 폼: 첨부파일 부분, 내용 입력부분의 웹 에디터 추가
+- 부트스트랩(AdminLTE): 제이쿼리 기반의 UI 템플릿(프레임워크)
+- AdminLTE: dist(디스트리뷰트 = 배포), page(더미데이터), plugins(서머노트등등)
+- 대시보드 파일샘플: index.html, index2.html, index3.html
+- board_write.html 파일에 bootstrap코어 임포트 + 서머노트 플러그인 임포트
+- 부트스트랩 가져온 홈페이지 https://github.com/ColorlibHQ/AdminLTE/releases/tag/v3.1.0
 - 반응형 서브페이지 (로그인, 회원가입, 마이페이지)
-- 이클립스 헬로월드 만들기
+- 이클립스 헬로월드 만들기 실습.
 
 
 #### 20210520(목) 작업.
