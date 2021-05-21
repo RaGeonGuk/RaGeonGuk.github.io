@@ -25,9 +25,13 @@
 - AdminLTE: dist(디스트리뷰트 = 배포), page(더미데이터), plugins(서머노트등등)
 - 대시보드 파일샘플: index.html, index2.html, index3.html
 - board_write.html 파일에 bootstrap코어 임포트 + 서머노트 플러그인 임포트
+- board_view.html 댓글 UI 디자인(부트스트랩) 추가.
 - 부트스트랩 가져온 홈페이지 https://github.com/ColorlibHQ/AdminLTE/releases/tag/v3.1.0
 - 반응형 서브페이지 (로그인, 회원가입, 마이페이지)
-- 이클립스 헬로월드 만들기 실습.
+- 관리자단 AdminLTE적용. (회원관리 CRUD, 게시판 CRUD, 대시보드)
+- 이클립스 헬로월드 만들기 실습. 1. 다이나믹 웹프로젝트(jsp 만드는 방식) 만든 후 사용자단  UI 실행만 하고, 삭제
+- 2. 스프링 (MVC) 웹프로젝트 만들예정. 헬로월드 1개 - 2달간 이프로젝트로 진행됩니다.
+- 위 스프링프로젝트에서 자바 기초도 이것으로 실습할 예정. -> htmlUI 만들것을 jsp변경작업 들어갑니다.
 
 
 #### 20210520(목) 작업.
