@@ -19,7 +19,8 @@
 - VS code 에서 만든 UI를 JSP로 변경 후 스프링웹 프로젝트를 진행합니다.
 
 #### 20210525(화) 작업
-- board_view.html 댓글 AdmiLTE3의 페이징 UI 추가 예정
+- css: 계층: 조부 > 부 > 본인(timeline) > 자식(collapse) 손자(time-labe) > 증손자
+- board_view.html 댓글 AdmiLTE3의 페이징 UI 추가 ok.
 - 반응형 서브페이지들(로그인, 회원가입, 마이페이지)
 - 관리자단 AdimnLTE적용.(회원관리 CRUD, 게시판 CRUD 대시보드)
 - 어제 스프링 프로젝트에서 5교시에 자바기초 시작 예정
