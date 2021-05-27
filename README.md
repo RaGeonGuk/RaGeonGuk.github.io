@@ -3,6 +3,18 @@
 - 피곤할 때, 자바|스프링(이클립스-egov전자정부프레임워크개발환경) 기본언어실습진행.
 - 피곤할 때, 오라클DB(SQL 디벨러퍼 개발환경) Ansi-SQL(표준SQL)기본언어실습진행 CRUD.
 - 2달째부터, 주로 스프링으로 실습이 진행.(납품용-이력서포트폴리오용)
+- 자바에 익숙해진 후 위 스프링 프로젝트를 이용해서 스프링 웹 프로젝트를 진행
+- VS code 에서 만든 UI를 JSP로 변경 후 스프링웹 프로젝트를 진행합니다.
+- 관리자단 AdminLTE적용 - 스프링 시간. (회원관리 CRUD 바로 jsp, 게시판 생성관리 CRUD 바로 jsp)
+
+#### 20210528(금) 작업예정.
+- 관리자단 admin/board_writh.html, board_view.html (댓글Ajaz처리)
+- 대시보드 home.html(최근 회원가입정보, 최근 게시물 정보)
+- 이클립스로 가져가서 작업한 html 내용을 resources 폴더(admin, home, root파일까지)로 배치
+- 스프링 작업의 시작
+- 
+
+#### 정보
 - eGov: 자바기반 -> JDK(Java Devleopment Kit 자바개발환경) 설치확인
 - JDK 실행경로 추가.
 - java -version (git --version)
@@ -13,12 +25,14 @@
 - 라이브서버(아파치): VS code에서 HTML 결과를 확인하는 라이브서버.(ocalhost:5500)
 - JRE: Java Runtime Enviriment(자바실행환경) - 자바 앱을 실행할때만 사용.
 - JDK 설치: 개발하고, 실행할때.
-- 점심 후 웹프로젝트1개 (HELLO WORLD) 생성 play 후 지우고,
-- 스프링프로젝트 1개(헬로 자바) -test 폴더에서 자바기초를실습
-- 자바에 익숙해진 후 위 스프링 프로젝트를 이용해서 스프링 웹 프로젝트를 진행
-- VS code 에서 만든 UI를 JSP로 변경 후 스프링웹 프로젝트를 진행합니다.
-#### 20210527(목) 작업예정
-- 관리자단 AdimnLTE적용.(회원관리 CRUD, 게시판 CRUD 대시보드)
+
+
+#### 20210527(목) 작업
+- admin/board_list.html 부터 시작
+- 관리자단 AdminLTE적용 - 지금: (게시판 CRUD-html, 대시보드- html)
+- 관리자단 기본 틀(템플릿): 공통 부분
+- Ctrl+k, Ctrl+0 = 코드 축소 = Ctrl+k+0 (코드구조 확인)
+- Ctrl+k, Ctrl+j = 코드 펼침 = Ctrl+k+j 
 
 
 #### 20210526(수) 작업.
