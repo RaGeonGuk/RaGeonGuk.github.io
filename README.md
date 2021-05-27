@@ -5,11 +5,13 @@
 - 2달째부터, 주로 스프링으로 실습이 진행.(납품용-이력서포트폴리오용)
 - 자바에 익숙해진 후 위 스프링 프로젝트를 이용해서 스프링 웹 프로젝트를 진행
 - VS code 에서 만든 UI를 JSP로 변경 후 스프링웹 프로젝트를 진행합니다.
-- 관리자단 AdminLTE적용 - 스프링 시간. (회원관리 CRUD 바로 jsp, 게시판 생성관리 CRUD 바로 jsp)
+
 
 #### 20210528(금) 작업예정.
 - 관리자단 admin/board_writh.html, board_view.html (댓글Ajaz처리)
 - 대시보드 home.html(최근 회원가입정보, 최근 게시물 정보)
+- 관리자단 AdminLTE적용 - 스프링 시간. |UI디자인시간 선택 후 아래 작업진행 예정
+- (회원관리 CRUD- html, 게시판 생성관리 CRUD html)
 - 이클립스로 가져가서 작업한 html 내용을 resources 폴더(admin, home, root파일까지)로 배치
 - 스프링 작업의 시작
 - 
