@@ -12,6 +12,8 @@
 - 소스 인스펙트 (소스분석); 
 - 데이터를 전송할때 사용 문장= 쿼리스트링(queryString)의 시작은 ?: ?키= value&키 = value
 - 뒤로가기 허용하면 게시물테러가 가능합니다.
+- 뒤로가기를 허용하지 않게 페이지를 이동하는 방식(Js에서는 location.replace 함수사용)
+- 뒤로가기를 허용하는 함수 (Js에서는 location.href = "" 사용)
 - 관리자단 admin/board_writh.html, board_view.html (댓글Ajaz처리)
 - 대시보드 home.html(최근 회원가입정보, 최근 게시물 정보)
 - 관리자단 AdminLTE적용 - 스프링 시간. |UI디자인시간 선택 후 아래 작업진행 예정
